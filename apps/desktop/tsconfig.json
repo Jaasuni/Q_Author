@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@q-author/core": ["../../packages/core/src"],
+      "@q-author/adapters": ["../../packages/adapters/src"],
+      "@q-author/storage": ["../../packages/storage/src"]
+    }
+  },
+  "include": ["src"]
+}

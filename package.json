@@ -1,0 +1,10 @@
+{
+  "name": "q-author-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "build": "pnpm -r --filter ./packages/* run build && pnpm --filter @q-author/desktop build",
+    "dev": "pnpm --filter @q-author/desktop dev",
+    "test": "pnpm -r --filter ./packages/* test"
+  }
+}

@@ -1,0 +1,12 @@
+body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell; }
+:root { --bg: #0f1115; --panel: #151821; --ink: #e6e6e6; --muted:#9aa0aa; --accent:#7aa2f7;}
+body { background: var(--bg); color: var(--ink); }
+.topbar { display:flex; gap:.75rem; align-items:center; padding:.5rem .75rem; background:var(--panel); position:sticky; top:0; z-index:2; }
+.sidebar { width: 260px; background: var(--panel); padding: .75rem; overflow:auto; }
+.main { flex:1; display:flex; flex-direction:column; }
+.layout { display:flex; height:100vh; }
+textarea.editor { flex: 1; width: 100%; padding: 1rem; background: #0b0d12; color: var(--ink); border: none; outline: none; resize: none; font-size: 16px; line-height: 1.5; }
+.stream { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background: #0b0d12; padding: .5rem; border-top: 1px solid #22252f; min-height: 140px; overflow:auto;}
+select, button, input[type="range"] { background:#0b0d12; color:var(--ink); border:1px solid #2a2f3a; padding:.25rem .5rem; border-radius:6px; }
+button.primary { background: var(--accent); color:#0b0d12; border: none; }
+.small { font-size: 12px; color: var(--muted); }

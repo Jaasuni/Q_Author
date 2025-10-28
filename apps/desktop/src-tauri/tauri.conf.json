@@ -1,0 +1,23 @@
+{
+  "build": {
+    "beforeDevCommand": "pnpm vite",
+    "beforeBuildCommand": "pnpm vite build",
+    "frontendDist": "../dist"
+  },
+  "tauri": {
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.qauthor.app",
+      "icon": []
+    },
+    "windows": [
+      {
+        "title": "Q Author",
+        "width": 1220,
+        "height": 780,
+        "resizable": true
+      }
+    ]
+  }
+}
